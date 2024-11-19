@@ -14,3 +14,27 @@ button.pack()
 label = tk.Label(root, text='Full name:')
 
 root.mainloop()
+
+'''
+class match(name, samesubjects):
+    def __init__(self):
+        self.name = name
+        self.matches = 0
+
+topMatches = [] # array containing an array for each student's top matches
+
+for i in range numStudents:
+    for j in range numMentors:
+        matches = 0
+        # hashmap the student's subjects.
+        # for each subject the mentor has, check if the student has
+        # a matching one. If so, incrememtn matches.
+
+        # while matches > num matches in topmatches array for this student
+        #   move through the array
+        # insert in (if not greater do not insert.) Upon insertion if there are more than MAXSUGGESTIONS matches
+        # in the array remove the least matched mentor. (Might make it so each one could be a linked list of ties as well...)
+
+
+code that outputs this information
+'''
