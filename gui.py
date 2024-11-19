@@ -16,7 +16,7 @@ label = tk.Label(root, text='Full name:')
 root.mainloop()
 
 '''
-class match(name, samesubjects):
+class pair(name, matches):
     def __init__(self):
         self.name = name
         self.matches = 0
@@ -26,9 +26,10 @@ topMatches = [] # array containing an array for each student's top matches
 for i in range numStudents:
     for j in range numMentors:
         matches = 0
-        # hashmap the student's subjects.
-        # for each subject the mentor has, check if the student has
-        # a matching one. If so, incrememtn matches.
+
+        for i in mentorSubjects:
+            if mentorSubjects[i] in mentorSubjects:
+                matches++
 
         # while matches > num matches in topmatches array for this student
         #   move through the array
